@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Dioxide - Blog</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+// contact page (input functions)
+
+$('input, textarea').each(function () {
+	if ($(this).val() == '') {
+		$(this).val($(this).attr('Alt'));
+	}
+}).focus(function () {
+	$(this).removeClass('inputerror');
+	if ($(this).val() == $(this).attr('Alt')) {
+		$(this).val('');
+	}
+}).blur(function () {
+	if ($(this).val() == '') {
+		$(this).val($(this).attr('Alt'));
+	}
+});
+	
+}); //end jquery
+
+</script>
+
+<!--[if IE 6]>
+<script src="js/png.js" type="text/javascript"></script>
+<script type="text/javascript">
+ 	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="header">
+
+	<div id="menu">
+		<div class="container-wrap">
+			<div class="container">
+				<div id="logo-wrap">
+					<a href="#">Dioxide.</a>
+				</div>
+				
+				<ul id="navigation">
+					<li><a href="index.html" id="nav-home">Home</a></li>
+					<li><a href="portfolio.html" id="nav-portfolio">Portfolio</a></li>
+					<li><a href="blog.html" id="nav-blog" class="active">Blog</a></li>
+					<li><a href="about.html" id="nav-about">About</a></li>
+					<li><a href="contact.html" id="nav-contact">Contact</a></li>
+				</ul>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="header-content">
+		<div class="container-wrap">
+			<div class="container">
+				<h1 class="header-title" id="title-our-inner-thoughts">Our inner thoughts.<span></span></h1>
+			</div>
+		</div>
+	</div>
+	
+</div> <!--/#header-->
+
+<div class="body">
+	<div class="container">
+		
+		<div class="two-column">
+		
+			<div class="column column-1">
+				<div class="post">
+					<h1 class="post-title"><a href="post.html">A new beginning is upon us.</a></h1>
+					<div class="post-content">
+						<p>Adipiscing elit. Pellentesque bibendum massa vitae ipsum fringilla varius. Aliquam interdum ante et mauris placerat ac malesuada lectus cursus. Nullam vulputate, lectus in tempus sollicitudin, quam odio placerat felis, eu bibendum mauris risus in nisi. Praesent vel suscipit lacus. <a href="#">Some link somewhere</a> phasellus eu aliquam quam.</p>
+						
+						<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+						
+						<p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.</p>
+						
+						<p>Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.</p>
+						
+						<p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum.</p>
+						
+						<p>Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada.</p>
+					</div>
+					<div class="post-meta">
+						<p class="float-left">By <a href="#">Author</a> on May 10, 2010, in <a href="#">Category</a></p>
+						<p class="float-right"><a href="#">26 Comments</a></p>
+						
+						<div class="clear"></div>
+					</div>
+					
+					<div class="indent"></div>
+				</div>
+				
+				<div class="post">
+					<h1 class="post-title"><a href="post.html">Why hello there.</a></h1>
+					<div class="post-content">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+						
+						<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+						
+						<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+					</div>
+					<div class="post-meta">
+						<p class="float-left">By <a href="#">Author</a> on May 10, 2010, in <a href="#">Category</a></p>
+						<p class="float-right"><a href="#">26 Comments</a></p>
+						
+						<div class="clear"></div>
+					</div>
+					
+					<div class="indent"></div>
+				</div>
+				
+				<div class="post">
+					<h1 class="post-title"><a href="post.html">Some text structures.</a></h1>
+					<div class="post-content">
+						<p>This is a long paragraph, before I waste more brain cells completing the rest of this paragraph, here's the dummy text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						
+						<h2>This is an h2 subheading.</h2>
+						
+						<p>And another paragraph here. More dummy text to follow. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. <strong>Oh look, bolded text.</strong> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+						
+						<h3>Oh my god, an h3 heading.</h3>
+						
+						<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+						
+						<h4>Suddenly, an h4 heading. Plus a list.</h4>
+						
+						<ul>
+							<li>Oh look, a list item.</li>
+							<li>And another one.</li>
+							<li>What do you know, another list item.</li>
+						</ul>
+						
+						<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+					</div>
+					<div class="post-meta">
+						<p class="float-left">By <a href="#">Author</a> on May 10, 2010, in <a href="#">Category</a></p>
+						<p class="float-right"><a href="#">26 Comments</a></p>
+						
+						<div class="clear"></div>
+					</div>
+					
+					<div class="indent"></div>
+				</div>
+				
+				<div id="blog-nav">
+					<p class="float-left"><a href="#">Newer Posts</a></p>
+					<p class="float-right"><a href="#">Older Posts</a></p>
+					<div class="clear"></div>
+				</div>
+				
+			</div>
+			
+			<div class="column column-2">
+				<a href="#" id="blog-subscribe"></a>
+				
+				<form method="post" action="" id="blog-search">
+					<input type="text" name="Search" id="blog-search-field" value="" alt="Search the blog."/>
+					<input name="submit" type="submit" id="blog-submit" value=""/>
+					
+					<div class="clear"></div>
+				</form>
+				
+				<h1>The categories.</h1>
+				<ul id="blog-categories">
+					<li><a href="#">Announcements (14)</a></li>
+					<li><a href="#">Technology (12)</a></li>
+					<li><a href="#">Portfolio Items (2)</a></li>
+					<li><a href="#">Miscellaneous (25)</a></li>
+				</ul>
+				
+			</div>
+			
+			<div class="clear"></div>
+		
+		</div> <!--/.two-column-->
+		
+	</div> <!--/.container-->
+</div> <!--/#body-->
+
+<div id="footer">
+	<div id="footer-main">
+		<div class="container">
+			<div class="three-column">
+				<div class="column column-1">
+					<h1>I've got an idea!</h1>
+					<p>Have you got the next big idea? Well, we can help you with that. Just send us a quick <strong>hello</strong>. We try to respond within a day, unless it's a weekend.</p>
+					<p><a href="#">contact@website.com</a></p>
+				</div>
+				<div class="column column-2">
+					<h1>Where ya' at?</h1>
+					<div class="footer-map">
+						<img src="images/footer/map.png" alt="Map" />
+					</div>
+					<div class="footer-contact">
+						<p><strong>Company</strong>.<br/>
+						13 Loop Ave.<br/>
+						12345</p>
+						<p>New York, NY</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="column column-3">
+					<h1 class="float-left">Our twitters.</h1>
+					<p id="twitter-follow" class="float-right"><a href="#">Follow us</a></p>
+					
+					<div class="clear"></div>
+					
+					<div id="twitter-msg-wrap">
+						<div id="twitter-msg">
+							<p>This is an interesting and captivating message. Some news perhaps. Anyway.</p>
+						</div>
+						<p id="twitter-time">10 minutes ago</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="footer-legal">
+		<div class="container">
+			<p class="float-left">&copy;2010 Qiming Weng. All Rights Reserved.</p>
+			<p class="float-right"><a href="#">Terms &amp; Conditions</a> &#8226; <a href="#">Privacy</a> &#8226; <a href="#">Email</a> &#8226; <a href="#">Twitter</a></p>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div> <!--/#footer-->
+
+</body>
+</html>

@@ -2,18 +2,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<title>Dioxide - Welcome</title>
+<title>Dioxide - Contact</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 <script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/twirlie.js" type="text/javascript"></script>
-<link rel="stylesheet" href="js/twirlie.css" type="text/css" />
-
 <script type="text/javascript">
 
-$(document).ready(function() {
-	$('#window-slide').twirlie();
+$(document).ready(function(){
+
+// contact page (input functions)
+
+$('input, textarea').each(function () {
+	if ($(this).val() == '') {
+		$(this).val($(this).attr('Title'));
+	}
+}).focus(function () {
+	$(this).removeClass('inputerror');
+	if ($(this).val() == $(this).attr('Title')) {
+		$(this).val('');
+	}
+}).blur(function () {
+	if ($(this).val() == '') {
+		$(this).val($(this).attr('Title'));
+	}
 });
+	
+}); //end jquery
 
 </script>
 
@@ -38,11 +52,11 @@ $(document).ready(function() {
 				</div>
 				
 				<ul id="navigation">
-					<li><a href="index.html" id="nav-home" class="active">Home</a></li>
+					<li><a href="index.html" id="nav-home">Home</a></li>
 					<li><a href="portfolio.html" id="nav-portfolio">Portfolio</a></li>
 					<li><a href="blog.html" id="nav-blog">Blog</a></li>
 					<li><a href="about.html" id="nav-about">About</a></li>
-					<li><a href="contact.html" id="nav-contact">Contact</a></li>
+					<li><a href="contact.html" id="nav-contact" class="active">Contact</a></li>
 				</ul>
 				
 				<div class="clear"></div>
@@ -53,42 +67,51 @@ $(document).ready(function() {
 	<div id="header-content">
 		<div class="container-wrap">
 			<div class="container">
-				<h1 class="header-title" id="title-we-are-fabulous">We are fabulous.<span></span></h1>
+				<h1 class="header-title" id="title-lets-get-in-touch">Let's get in touch.<span></span></h1>
 			</div>
 		</div>
 	</div>
 	
 </div> <!--/#header-->
 
-<div class="body" id="home-body">
+<div class="body">
 	<div class="container">
-	
-		<div id="window">
-			<div id="window-slide">
-				<ul>
-					<li><img src="images/portfolio/flower/flower-3.jpg" alt=""/></li>
-					<li><img src="images/portfolio/flower/flower-2.jpg" alt=""/></li>
-					<li><img src="images/portfolio/flower/flower-1.jpg" alt=""/></li>
-				</ul>
-				
-				<a href="#" class="prev" id="window-prev"></a>
-				<a href="#" class="next" id="window-next"></a>
-			</div>
-		</div>
-	
+		
 		<div class="three-column">
 			<div class="column column-1">
-				<h1>Wait, who are you?</h1>
+			
+				<h1>Send us some mail.</h1>
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum massa vitae ipsum fringilla varius. Aliquam interdum ante et mauris placerat ac malesuada lectus cursus. Nullam vulputate, lectus in tempus sollicitudin</p>
+				<p>Integer venenatis hendrerit mattis. Donec volutpat tristique ipsum, a interdum neque scelerisque non. Etiam ante ligula, viverra sit amet consectetur at, vulputate sit amet sapien. <a href="#" title="">Download VCard</a></p>
 				
-				<h2>This is what we do.</h2>
-				
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla convallis nulla vitae libero volutpat commodo. Donec et sem ipsum. Suspendisse potenti. In hac habitasse platea dictumst. <a href="#">Learn More</a></p>
-				
+				<div id="contact-map">
+					<div id="contact-map-pop-up">
+						<p>Dioxide Inc.<br/>
+						13 Loop Ave, San Fransisco, CA<br/>
+						<a href="#" title="">contact@website.com</a></p>
+					</div>
+				</div>
+			
 			</div>
+			
+			<form method="post" action="mail.php" id="contact-form">
+			
+				<input type="text" name="name" class="contact-input" id="contact-name" title="Name" />	            
+				<input type="text" name="email" class="contact-input" id="contact-email" title="Email" />
+				
+				<div class="clear"></div>
+				
+				<input type="text" name="website" class="contact-input" id="contact-website" title="Website" />
+					            
+				<textarea name="message" id="contact-message" class="contact-textarea" title="Message" cols="" rows=""></textarea>
+				
+				<input name="submit" type="submit" id="contact-submit" value=""/>
+			
+			</form>
+			
 			<div class="clear"></div>
-		</div>	
+			
+		</div>
 		
 	</div>
 </div>
