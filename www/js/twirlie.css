@@ -1,0 +1,47 @@
+/* Begin Twirlie Mandatory Styles */
+
+#window-slide {
+	width: 630px; /* The width of the display area */
+	height: 500px; /* The height of the display area */
+	overflow: hidden; /* So that slides are hidden when they go out of view */
+	position: relative; /* So that the slides move relative to the display area */
+}
+
+#window-slide ul {
+	height: 500px; /* Same as #slider */
+	width: 10000em; /* So that the number of slides is unlimited */
+	list-style: none; /* To get rid of those ugly default bullets */
+	position: absolute; /* So that the slides are positioned absolute, relative to the display area */
+	left: 0px; /* Starting position, 0px from the left */
+}
+
+#window-slide ul li {
+	width: 630px; /* Same as #slider, but for each individual slide */
+	height: 500px; /* Same as #slider, but for each individual slide */
+	float: left; /* To arrange the items side by side */
+	display: block; /* <li> is usually an inline element; this changes that */
+}
+
+/* Begin Twirlie Mandatory Styles */
+
+.portfolio-image {
+	width: 630px; /* The width of the display area */
+	height: 301px; /* The height of the display area */
+	overflow: hidden; /* So that slides are hidden when they go out of view */
+	position: relative; /* So that the slides move relative to the display area */
+}
+
+.portfolio-image ul {
+	height: 300px; /* Same as #slider */
+	width: 10000em; /* So that the number of slides is unlimited */
+	list-style: none; /* To get rid of those ugly default bullets */
+	position: absolute; /* So that the slides are positioned absolute, relative to the display area */
+	left: 0px; /* Starting position, 0px from the left */
+}
+
+.portfolio-image ul li {
+	width: 630px; /* Same as #slider, but for each individual slide */
+	height: 300px; /* Same as #slider, but for each individual slide */
+	float: left; /* To arrange the items side by side */
+	display: block; /* <li> is usually an inline element; this changes that */
+}

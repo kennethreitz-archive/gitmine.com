@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<title>Dioxide Documentation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>Dioxide HTML Documentation</h1>
+
+<p>Quick Navigation:</p>
+
+<ul>
+<li><a href="#dimensions">Dimensions</a></li>
+<li><a href="#spacing">Spacing</a></li>
+<li><a href="color">Colors</a></li>
+<li><a href="#html-structure">HTML Structure</a></li>
+<li><a href="#css-structure">CSS Structure</a></li>
+<li><a href="#adding-slider-items">Adding Slider Items</a></li>
+<li><a href="#adding-portfolio-items">Adding Portfolio Items</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#legal">Legal</a></li>
+<li><a href="#scripts">Scripts</a></li>
+<li><a href="#help">More Help</a></li>
+</ul>
+
+<p>This is a very basic documentation to get you off your feet with some simple facts about Dioxide. </p>
+<p>Dioxide is a beautiful, crisp theme. This is the file strcuture:</p>
+<ul>
+	<li>Documentation (/doc)</li>
+	<li>Theme files (/www)
+		<ul>
+		<li>Home page (index.html)</li>
+		<li>Portfolio (portfolio.html)</li>
+		<li>Blog (blog.html)
+		<li>Individual blog post (post.html)</li>
+		<li>About (about.html)</li>
+		<li>Contact (contact.html)</li>
+		<li>Mail (mail.php)</li>
+		<li>Javascript (/js)</li>
+		<li>Images (/images)</li>
+		</ul>
+	</li>
+	<li>PSD files (/psd)</li>
+</ul>
+
+<h2 id="dimensions">Dimensions</h2>
+<ul>
+	<li>Width - 960px</li>
+	<li>Menu height - 50px</li>
+	<li>Header height - 150px</li>
+	<li>Total header height - 200px</li>
+	<li>Home page portfolio items - 630px by 500px</li>
+	<li>Portfolio items - 630px by 300px</li>
+	<li>Contact page avatars - 300px by 150px</li>
+</ul>
+
+<h2 id="spacing">Spacing</h2>
+<ul>
+	<li>For the most part, margins between things are 20px</li>
+	<li>Space between ends of the body are 50px</li>
+	<li>Most spacing under titles are 40px</li>
+</ul>
+
+<h2 id="color">Colors</h2>
+<ul>
+	<li>Titles, bold text, links - #1a160d</li>
+	<li>Regular text - #4c4326</li>
+	<li>Menu text (inactive) is 60% - #ffffff</li>
+	<li>Active and hover is 100% - #ffffff</li>
+	<li>Footer text - #ffffff</li>
+</ul>
+
+<h2 id="html-structure">HTML Structure</h2>
+
+<pre class="code">
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+
+&lt;head&gt;
+
+<p>Title, Stylesheets, Scripts &amp;amp; IE6 PNG Fix</p>
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div id=&quot;header&quot;&gt;
+
+<p>Menu, Navigation, Header</p>
+&lt;/div&gt;
+
+&lt;div class=&quot;body&quot;&gt;
+
+<p>Body</p>
+<p>The division for the Body is set to a class of &quot;body&quot; because index.html has special properties in a body ID.</p>
+&lt;/div&gt;
+
+&lt;div id=&quot;footer&quot;&gt;
+
+<p>Footer</p>
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h2 id="css-structure">CSS Structure</h2>
+
+<pre class="code">
+/* reseting elements: */
+
+/* global */
+
+/* header */
+
+/* body */
+
+/* window */
+
+/* window slider */
+
+/* portfolio */
+
+/* blog */
+
+/* post */
+
+/* about */
+
+/* contact */
+
+/* footer */
+</pre>
+
+<h2 id="adding-slider-items">Adding Slider Items</h2>
+
+<p>Adding slider items to the home page (index.html) is simple and intuitive. In the ul within the div #window-slide (line 67), simply add this line:</p>
+
+<pre class="code">
+&lt;li&gt;&lt;img src=&quot;<strong>image destination</strong>&quot; alt=&quot;&quot;/&gt;&lt;/li&gt;
+</pre>
+
+<h2 id="adding-portfolio-items">Adding Portfolio Items</h2>
+
+<p>For each portfolio item you add, make sure to include this code within the div .container within the div .body:</p>
+
+<pre class="code">
+&lt;div class=&quot;portfolio-item&quot;&gt;
+	&lt;div class=&quot;portfolio-description&quot;&gt;
+		&lt;h1&gt;<strong>Title.</strong>&lt;/h1&gt;
+		&lt;p&gt;<strong>Description.</strong> &lt;a href=&quot;#&quot;&gt;<strong>Link Location</strong>&lt;/a&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	
+	&lt;div class=&quot;portfolio-image&quot; id=&quot;portfolio-image-<strong>id number</strong>&quot;&gt;
+		&lt;div class=&quot;portfolio-image-slider&quot;&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;img src=&quot;<strong>image location</strong>&quot; alt=&quot;&quot;/&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;img src=&quot;<strong>image location</strong>&quot; alt=&quot;&quot;/&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		
+		&lt;div class=&quot;portfolio-control&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;prev&quot; id=&quot;prev-<strong>id number</strong>&quot;&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;next&quot; id=&quot;next-<strong>id number</strong>&quot;&gt;&lt;/a&gt;
+		&lt;/div&gt;
+		
+		&lt;div class=&quot;portfolio-hover&quot;&gt;&lt;/div&gt;	
+	&lt;/div&gt;
+	
+	&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt; &lt;!--/.portfolio-item--&gt;
+</pre>
+
+<p>The ID number should correspond to the item, for example, the third portfolio item should have an ID number of three (3). Make sure all the ID numbers within a single portfolio item are the same.</p>
+
+<pre class="code">
+&lt;script type="text/javascript"&gt;
+
+$(document).ready(function() {
+	$('#portfolio-image-1').twirlie({prevSel:"#prev-1", nextSel:"#next-1"});
+	$('#portfolio-image-2').twirlie({prevSel:"#prev-2", nextSel:"#next-2"});
+	$('#portfolio-image-3').twirlie({prevSel:"#prev-3", nextSel:"#next-3"});
+	
+	<p>Add a new line for each new portfolio item</p>
+		
+	$('#portfolio-image-<strong>id number</strong>').twirlie({prevSel:"#prev-<strong>id number</strong>", nextSel:"#next-<strong>id number</strong>"});
+});
+
+&lt;/script&gt;
+</pre>
+
+<h2 id="fonts">Fonts</h2>
+<p>Images used in portfolio samples are not for commercial use, they are copyright their respective owners and are used for demonstration only. The only font used is Helvetica, which comes with every Macintosh computer. If you do not have Helvetica, Arial is very similar and will do just fine.</p>
+
+<h2 id="legal">Legal</h2>
+<p>The images which are used in the portfolio screenshots are all Creative Commons commercially licensed, they can be found individually here:</p>
+<ul>
+	<li><a href="http://www.flickr.com/photos/aussiegall/370467465/">Flower 1</a></li>
+	<li><a href="http://www.flickr.com/photos/aussiegall/2208863802/">Flower 2</a></li>
+	<li><a href="http://www.flickr.com/photos/peasap/1625639532/">Flower 3</a></li>
+	
+	<li><a href="http://www.flickr.com/photos/wonderlane/3283617803/">Water 1</a></li>
+	<li><a href="http://www.flickr.com/photos/proimos/3616788238/">Water 2</a></li>
+	
+	<li><a href="http://www.flickr.com/photos/jule_berlin/839245545/">Landscape 1</a></li>
+	<li><a href="http://www.flickr.com/photos/tambako/2962489964/">Landscape 2</a></li>
+	<li><a href="http://www.flickr.com/photos/forestwander-nature-pictures/3283425579/">Landscape 3</a></li>
+</ul>
+
+<p>The map in the footer can be found <a href="http://cardhouse.com/design/free/usa.htm">here</a>.</p>
+
+<h2 id="scripts">Scripts</h2>
+
+<p>This theme uses the <a href="http://designerinfusion.com/products/twirlie/">Twirlie slider</a>, and the <a href="http://www.dillerdesign.com/experiment/DD_belatedPNG/">DD_belated PNG</a> fix for IE6.</p>
+
+<h2 id="help">More Help</h2>
+<p>For more help leave a comment in the item discussion or contact us through our <a href="http://themeforest.net/user/Creative32">profile</a>. For legal assisstance, contact envato support.</p>
+
+</div>
+
+<div id="footer">
+<p>&copy;2010 Qiming Weng, Creative32, All rights reserved.</p>
+</div>
+
+</body>
+</html>
